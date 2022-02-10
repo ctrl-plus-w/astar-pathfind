@@ -1,0 +1,39 @@
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #4e4e4e;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1px; */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  /* gap: 1px; */
+}
+
+.cell {
+  --size: 1rem;
+  width: var(--size);
+  height: var(--size);
+
+  background: #f1f1f1;
+}
+
+.cell.open {
+  background: rgb(29, 138, 56);
+}
+
+.cell.path {
+  background: rgb(24, 113, 196);
+}
+
+.cell.wall {
+  background: black;
+}
